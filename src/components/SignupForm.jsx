@@ -57,7 +57,7 @@ const SignupForm = ({ setIsLoggedIn }) => {
   return (
     <div>
       {/* student-Instructor tab */}
-      <div className="flex bg-richblack-700 p-1 gap-x-1 my-6 rounded-full max-w-max max-w-max">
+      <div className="flex bg-richblack-700 p-1 gap-x-1 my-6 rounded-full max-w-max">
         <button
           className={`${
             accountType === "student"
