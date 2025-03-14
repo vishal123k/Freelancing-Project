@@ -23,9 +23,8 @@ const LoginForm = ({ setIsLoggedIn }) => {
   function submitHandler(event) {
     event.preventDefault();
     setIsLoggedIn(true);
+    localStorage.setItem("isLoggedIn", "true"); // Store login state
     toast.success("Logged In");
-    console.log("Printing the formData ");
-    console.log(formData);
     navigate("/");
   }
 

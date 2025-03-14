@@ -21,7 +21,7 @@ const Banner = () => {
     if (file) {
       const base64Image = await convertToBase64(file);
       setBannerImage(base64Image);
-      localStorage.setItem("Banner", base64Image); 
+      localStorage.setItem("Banner", base64Image);
     }
   };
 
