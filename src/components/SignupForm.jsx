@@ -53,29 +53,30 @@ const SignupForm = ({ setIsLoggedIn }) => {
 
     navigate("/login");
   }
+  function clickEmployee() {
+    navigate("/login")
+  }
 
   return (
     <div>
       {/* student-Instructor tab */}
       <div className="flex bg-richblack-700 p-1 gap-x-1 my-6 rounded-full max-w-max">
         <button
-          className={`${
-            accountType === "student"
+          className={`${accountType === "student"
               ? "bg-richblack-900 text-richblack-5"
               : "bg-transparent text-richblack-200"
-          } py-2 px-5 rounded-full transition-all duration-200`}
+            } py-2 px-5 rounded-full transition-all duration-200`}
           onClick={() => setAccountType("student")}
         >
           Freelancer
         </button>
 
         <button
-          className={`${
-            accountType === "instructor"
+          className={`${accountType === "Employee"
               ? "bg-richblack-900 text-richblack-5"
               : "bg-transparent text-richblack-200"
-          } py-2 px-5 rounded-full transition-all duration-200`}
-          onClick={() => setAccountType("instructor")}
+            } py-2 px-5 rounded-full transition-all duration-200`}
+          onClick={clickEmployee}
         >
           Employer
         </button>

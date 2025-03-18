@@ -7,6 +7,15 @@ import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import { useState } from "react";
 import PrivateRoute from "./components/PrivateRoute";
+import RestPassword from "./components/RestPassword";
+import Verifiy from './components/Verifiy'
+import ResetComplete from "./components/ResetComplete";
+import ResetVerify from "./components/ResetVerify"
+import ResetAgain from "./components/RestAgain"
+import ResentIt from "./components/ResentIt";
+
+
+
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -32,6 +41,30 @@ function App() {
               <Dashboard />
             </PrivateRoute>
           }
+        />
+        <Route
+          path="/rest"
+          element={<RestPassword/>}
+        />
+        <Route
+          path="/verifiy"
+          element={<Verifiy/>}
+        />
+        <Route
+          path="/resetComplete"
+          element={<ResetComplete/>}
+        />
+        <Route
+          path="/resetverify"
+          element={<ResetVerify/>}
+        />
+        <Route
+          path="/resetagain"
+          element={<ResetAgain/>}
+        />
+         <Route
+          path="/resentemail"
+          element={<ResentIt/>}
         />
       </Routes>
     </div>
