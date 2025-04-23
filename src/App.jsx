@@ -13,8 +13,17 @@ import ResetComplete from "./components/ResetComplete";
 import ResetVerify from "./components/ResetVerify"
 import ResetAgain from "./components/RestAgain"
 import ResentIt from "./components/ResentIt";
-
-
+import FindTalent from "./components/FindTalent";
+import VideoEditing from "./components/VideoEditing";
+import FindWork from "./components/FindWork";
+import EastToLearn from "./components/EastToLeran"
+import Postjob from "./components/Postjob";
+import GetAdvice from "./components/GetAdvice"
+import SocalMedia from "./components/SocalMedia";
+import Logo from "./components/Logo"
+import Articals from "./components/Articals"
+import WordPress from "./components/WordPress";
+import FindWork2 from "./components/FindWork2"
 
 
 function App() {
@@ -44,29 +53,74 @@ function App() {
         />
         <Route
           path="/rest"
-          element={<RestPassword/>}
+          element={<RestPassword />}
         />
         <Route
           path="/verifiy"
-          element={<Verifiy/>}
+          element={<Verifiy />}
         />
         <Route
           path="/resetComplete"
-          element={<ResetComplete/>}
+          element={<ResetComplete />}
         />
         <Route
           path="/resetverify"
-          element={<ResetVerify/>}
+          element={<ResetVerify />}
         />
         <Route
           path="/resetagain"
-          element={<ResetAgain/>}
+          element={<ResetAgain />}
         />
-         <Route
+        <Route
           path="/resentemail"
-          element={<ResentIt/>}
+          element={<ResentIt />}
+        />
+        <Route
+          path="/findtalent"
+          element={<FindTalent />}
+        />
+        <Route
+          path="/videoediting"
+          element={<VideoEditing />}
+        />
+        <Route
+          path="/findwork"
+          element={<FindWork />}
+        />
+        <Route
+          path="/easytolearn"
+          element={<EastToLearn />}
+        />
+        <Route
+          path="/postjob"
+          element={<Postjob />}
+        />
+        <Route
+          path="/getadvice"
+          element={<GetAdvice />}
+        />
+        <Route
+          path="/socalmedia"
+          element={<SocalMedia />}
+        />
+        <Route
+          path="/logo"
+          element={<Logo />}
+        />
+        <Route
+          path="/Articals"
+          element={<Articals />}
+        />
+        <Route
+          path="/wordpress"
+          element={<WordPress />}
+        />
+        <Route
+          path="/findworkforskill"
+          element={<FindWork2 />}
         />
       </Routes>
+
     </div>
   );
 }

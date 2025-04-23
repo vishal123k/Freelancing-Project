@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import logo from "../assets/Logo.svg";
-
 const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
   const location = useLocation();
 
@@ -22,7 +21,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
   };
 
   return (
-    <div className="flex justify-between items-center w-11/12 max-w-[1600px] py-4 mx-auto">
+    <div className="flex justify-between items-center w-11/12 max-w-[1600px] py-4 mx-auto border-b">
       <Link to="/">
         <img src={logo} alt="Logo" width={160} height={40} loading="lazy" />
       </Link>
@@ -30,10 +29,10 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
       <nav>
         <ul className="text-richblack-100 flex gap-x-6">
           <li>
-            <Link to="/">Find Talent</Link>
+            <Link to="/findtalent">Find Talent</Link>
           </li>
           <li>
-            <Link to="/">Find Work</Link>
+            <Link to="/findwork">Find Work</Link>
           </li>
           <li>
             <Link to="/">Himanshu</Link>
