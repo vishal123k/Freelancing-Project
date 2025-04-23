@@ -44,6 +44,7 @@ const jobs = {
     "Audio Editor",
     "Ad Creative Freelancer",
     "Audio Mixer",
+    
   ],
 };
 
@@ -96,7 +97,7 @@ const JobBrowserPage = () => {
           ))}
         </main>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };

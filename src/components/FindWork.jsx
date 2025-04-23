@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import MainPage from './MainPage';
 
 const earnOptions = [
   {
@@ -15,13 +16,13 @@ const earnOptions = [
   {
     title: 'Win work with ads',
     description: 'Get noticed by the right client.',
-    path: '/ads',
+    path: '/winwork',
   },
   {
     title: 'Join Freelancer Plus',
     description:
       'Access more Connects, get strategic insights on competitors, and try out the latest tools.',
-    path: '/freelancer-plus',
+    path: '/jion',
   },
 ];
 
@@ -29,12 +30,12 @@ const WaysToEarn = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="px-6 py-10 bg-white h-auto">
+    <div className="px-6 py-10 bg-white h-auto relative overflow-hidden flex flex-col overflow-hidden">   
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {earnOptions.map((option, idx) => (
           <div
             key={idx}
-            className={`p-6 rounded-md cursor-pointer transition hover:shadow-lg ${option.highlight ? 'bg-gray-300' : 'bg-white'}`}
+            className={`mb-10 hover:bg-gray-100 p-4 rounded-xl shadow-md    p-6 rounded-md cursor-pointer transition hover:shadow-lg ${option.highlight ? 'text-yellow' : 'bg-white'}`}
             onClick={() => navigate(option.path)}  // This triggers the page navigation
           >
             <h3 className="text-md font-semibold text-gray-900 mb-1">
@@ -46,6 +47,7 @@ const WaysToEarn = () => {
           </div>
         ))}
       </div>
+      <MainPage/>
     </div>
   );
 };

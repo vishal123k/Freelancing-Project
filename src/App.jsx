@@ -23,7 +23,9 @@ import SocalMedia from "./components/SocalMedia";
 import Logo from "./components/Logo"
 import Articals from "./components/Articals"
 import WordPress from "./components/WordPress";
-import FindWork2 from "./components/FindWork2"
+import FindWork2 from "./components/FindWork2";
+import WinWork from "./components/WinWork";
+import Jion from "./components/Jion";
 
 
 function App() {
@@ -118,6 +120,14 @@ function App() {
         <Route
           path="/findworkforskill"
           element={<FindWork2 />}
+        />
+        <Route
+          path="/winwork"
+          element={<WinWork/>}
+        />
+        <Route
+          path="/jion"
+          element={<Jion/>}
         />
       </Routes>
 
