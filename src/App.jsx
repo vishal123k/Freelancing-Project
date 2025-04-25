@@ -123,11 +123,11 @@ function App() {
         />
         <Route
           path="/winwork"
-          element={<WinWork/>}
+          element={<WinWork />}
         />
         <Route
           path="/jion"
-          element={<Jion/>}
+          element={<Jion />}
         />
       </Routes>
 
