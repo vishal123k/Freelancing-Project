@@ -21,7 +21,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
   };
 
   return (
-    <div className="flex justify-between items-center w-11/12 max-w-[1600px] py-4 mx-auto border-b">
+    <div className="flex  justify-between items-center w-11/12 max-w-[1600px] py-4 mx-auto border-b">
       <Link to="/">
         <img src={logo} alt="Logo" width={160} height={40} loading="lazy" />
       </Link>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import MainPage from './MainPage';
+import Footer from "./Footer";
 
 const earnOptions = [
   {
@@ -30,25 +30,25 @@ const WaysToEarn = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="px-6 py-10 bg-white h-auto relative overflow-hidden flex flex-col overflow-hidden">   
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {earnOptions.map((option, idx) => (
-          <div
-            key={idx}
-            className={`mb-10 hover:bg-gray-100 p-4 rounded-xl shadow-md    p-6 rounded-md cursor-pointer transition hover:shadow-lg ${option.highlight ? 'text-yellow' : 'bg-white'}`}
-            onClick={() => navigate(option.path)}  // This triggers the page navigation
-          >
-            <h3 className="text-md font-semibold text-gray-900 mb-1">
-              {option.title}
-            </h3>
-            <p className="text-sm text-gray-700 leading-relaxed">
-              {option.description}
-            </p>
-          </div>
-        ))}
+    <>
+      <div className="px-4 sm:px-8 md:px-16 lg:px-24 py-16 bg-white min-h-screen">
+        <h1 className="text-center text-3xl font-bold text-gray-800 mb-12">Find Work</h1>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {earnOptions.map((option, idx) => (
+            <div
+              key={idx}
+              onClick={() => navigate(option.path)}
+              className=" rounded-xl shadow hover:shadow-xl hover: bg-slate-50 hover:scale-105 transition-all duration-300 cursor-pointer p-6"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{option.title}</h3>
+              <p className="text-sm text-gray-600">{option.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
-      <MainPage/>
-    </div>
+      <Footer />
+    </>
   );
 };
 
