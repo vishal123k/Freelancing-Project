@@ -154,10 +154,10 @@ const VideoEditingPage = () => {
       {/* Social Media Editing */}
       <section>
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-2xl font-semibold text-gray-800">Editing for ads and social media</h2>
+          <h2 className="text-2xl font-semibold text-white">Editing for ads and social media</h2>
           <a href="#" className="text-green-600 hover:underline text-sm">View All Projects →</a>
         </div>
-        <p className="text-sm text-gray-600 mb-5">Work with a pro to tailor your videos for your target audience</p>
+        <p className="text-sm text-gray-600 mb-5 text-white">Work with a pro to tailor your videos for your target audience</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {socialMediaProjects.map((proj, idx) => (
             <VideoCard key={idx} project={proj} />
